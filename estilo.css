@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: darkgray;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(img/restaurant-interior.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        min-height: 70vh;  
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+} 
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter:blur(10px);
+    top: 100;
+    z-index: 1;
+    background-color: darkslategray;
+    padding: 20px;
+    min-width: 400px;
+}
